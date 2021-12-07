@@ -5,7 +5,7 @@ from tensorflow.keras.layers import Flatten, Dense, Conv2D, MaxPooling2D
 
 # Load data from MNIST data set
 MNIST = tf.keras.datasets.mnist
-(train_images, train_labels),(test_images, test_labels) = MINST.load_data()
+(train_images, train_labels),(test_images, test_labels) = MNIST.load_data()
 
 # Reshape data
 train_images = train_images.reshape(60000, 28, 28, 1)
